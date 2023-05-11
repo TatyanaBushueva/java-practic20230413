@@ -11,12 +11,12 @@ public class task1 {
 
     public static void main(String[] args) {
         ArrayList<String> list = new ArrayList<>();
-        list.add("строка 1");
-        list.add("строка 2");
-        list.add("строка 3");
-        list.add("123");
-        list.add("456");
-        list.add("789");
+        list.add("Яблоко");
+        list.add("11");
+        list.add("13");
+        list.add("Апельсин");
+        list.add("Дыня");
+        list.add("17");
         System.out.println("Исходный список: " + list);
 
         for (int i = 0; i < list.size(); i++) {
