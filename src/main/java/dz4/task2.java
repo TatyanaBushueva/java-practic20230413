@@ -7,11 +7,11 @@ public class task2 {
     // Реализуйте метод, который вернет “перевернутый” список
         public static void main(String[] args) {
             LinkedList<String> list = new LinkedList<String>();
-            list.add("a");
-            list.add("b");
-            list.add("c");
+            list.add("o");
+            list.add("p");
+            list.add("r");
             LinkedList<String> reversedList = reverseLinkedList(list);
-            System.out.println(reversedList); // [c, b, a]
+            System.out.println(reversedList); // [r, p, o]
         }
 
         public static LinkedList reverseLinkedList(LinkedList list) {
