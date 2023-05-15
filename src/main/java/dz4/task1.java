@@ -17,19 +17,19 @@ import java.util.Scanner;
             Scanner scanner = new Scanner(System.in);
             LinkedList<String> list = new LinkedList<>();
             while (true) {
-                System.out.println("Введите строку (print/revert для выполнения команд):");
+                System.out.println("Введите print/revert:");
                 String input = scanner.nextLine();
                 if (input.equals("print")) {
-                    System.out.println("Строки в обратном порядке:");
+                    System.out.println("Последняя введенная строка - первая в списке, а первая - последняя:");
                     while (!list.isEmpty()) {
                         System.out.println(list.removeLast());
                     }
                 } else if (input.equals("revert")) {
                     if (!list.isEmpty()) {
                         list.removeLast();
-                        System.out.println("Последняя введенная строка удалена из памяти.");
+                        System.out.println("Предыдущая введенная строка удалена");
                     } else {
-                        System.out.println("Нет сохраненных строк для удаления.");
+                        System.out.println("Для удаления нет сохраненных строк");
                     }
                 } else {
                     list.addLast(input);
